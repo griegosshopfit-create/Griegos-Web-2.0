@@ -1,0 +1,8 @@
+// HTTP local en puerto efímero: comprueba navegación y recursos, sin navegador ni red externa.
+const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),assert=require('node:assert/strict');
+const {startServer}=require('./dev-server.cjs'),root=path.resolve(__dirname,'..');
+async function run(){const server=startServer(0);await new Promise(resolve=>server.once('listening',resolve));const base=`http://127.0.0.1:${server.address().port}`,paths=new Set(['/','/pages/odyssey/']);const pages=['index.html',...fs.readdirSync(path.join(root,'pages/odyssey')).filter(f=>f.endsWith('.html')).map(f=>'pages/odyssey/'+f)];
+for(const file of pages){paths.add('/'+file);const html=fs.readFileSync(path.join(root,file),'utf8');for(const m of html.matchAll(/(?:href|src)="([^"]+)"/g)){const href=m[1].replace(/&amp;/g,'&');if(/^(?:https?:|#)/.test(href))continue;const url=new URL(href,base+'/'+file);paths.add(url.pathname+url.search);}}
+const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(root,'data/products.js'),'utf8'),c);for(const p of c.window.GRIEGOS_PRODUCTS)paths.add('/'+p.image.replace(/^\.\//,''));
+try{for(const url of paths){const response=await fetch(base+url);assert.equal(response.status,200,url);assert.ok((await response.arrayBuffer()).byteLength>0,url);}for(const url of ['/.git/config','/%2e%2e%5csecret.txt','/missing.html','/pages/odyssey/nope.html'])assert.equal((await fetch(base+url)).status,404,url);console.log(`${paths.size} rutas/recursos HTTP correctos; 4 rutas inexistentes o restringidas rechazadas.`);}finally{server.close();server.closeAllConnections();}}
+run().catch(error=>{console.error(error);process.exitCode=1;});

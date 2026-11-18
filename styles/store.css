@@ -1,0 +1,367 @@
+/* GRIEGOS Store: Havana gym imagery, cobalt light and scroll depth.
+   Loaded only by store/index.html; shared pages keep their own theme. */
+
+.store-page {
+  --store-drift: 0px;
+  --hero-shift: 0px;
+  isolation: isolate;
+  background: #090e16;
+}
+
+/* A single fixed scene keeps the atmosphere continuous through the store. */
+.store-atmosphere {
+  position: fixed;
+  z-index: -1;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 84% 16%, #153452 0, transparent 54%),
+    linear-gradient(140deg, #101922, #090e16 62%, #101c2b);
+}
+
+.store-atmosphere::after {
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(0deg, transparent 0 3px, rgb(255 255 255 / 0.018) 3px 4px);
+  content: "";
+}
+
+.store-atmosphere-glow {
+  position: absolute;
+  inset: -15%;
+  background:
+    radial-gradient(ellipse at 12% 72%, rgb(30 105 208 / 0.24), transparent 48%),
+    radial-gradient(ellipse at 95% 22%, rgb(49 121 221 / 0.18), transparent 46%);
+  transform: translate3d(0, calc(var(--store-drift) * -1), 0);
+}
+
+.store-atmosphere-light {
+  position: absolute;
+  inset: -18%;
+  background: repeating-linear-gradient(121deg, transparent 0 160px, rgb(167 195 222 / 0.035) 160px 236px, transparent 236px 270px);
+  transform: translate3d(0, var(--store-drift), 0);
+}
+
+.store-atmosphere-light::after {
+  position: absolute;
+  inset: -8%;
+  background: linear-gradient(121deg, transparent 25%, rgb(112 166 224 / 0.06) 45%, transparent 65%);
+  content: "";
+  animation: store-light-drift 22s ease-in-out infinite alternate;
+}
+
+.store-page .announcement-bar {
+  background: #0c1c30;
+}
+
+.store-page .site-header {
+  background: rgb(9 14 22 / 0.94);
+}
+
+.store-page .nav-link[aria-current="page"] {
+  color: #a3c5ff;
+}
+
+.store-page .nav-link[aria-current="page"]::after {
+  transform: scaleX(1);
+}
+
+/* The landscape image leaves space for the headline at the left. */
+.store-page .hero-section {
+  min-height: clamp(640px, calc(100svh - 112px), 820px);
+  background: #090e16;
+}
+
+.store-page .hero-background {
+  display: block;
+  inset: -4% -2%;
+  transform: translate3d(0, var(--hero-shift), 0);
+}
+
+.store-page .hero-image {
+  object-position: 64% center;
+}
+
+.store-page .hero-overlay {
+  background:
+    linear-gradient(90deg, rgb(6 11 18 / 0.91), rgb(6 11 18 / 0.65) 29%, rgb(6 11 18 / 0.08) 63%, transparent 100%),
+    linear-gradient(0deg, #090e16 0%, rgb(9 14 22 / 0.3) 18%, transparent 46%);
+}
+
+.store-page .hero-content {
+  padding-block: 80px 110px;
+}
+
+.store-page .hero-content h1 {
+  font-size: clamp(68px, 7.4vw, 108px);
+  text-shadow: 0 4px 32px rgb(0 0 0 / 0.18);
+}
+
+.store-page .hero-content h1 span {
+  color: #78aaff;
+}
+
+.store-page .hero-description {
+  max-width: 395px;
+  color: #d6dee9;
+  font-size: clamp(14px, 1.2vw, 16px);
+}
+
+.store-page .hero-bottom-label {
+  bottom: 18px;
+  gap: 16px;
+}
+
+.store-scroll-cue {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  gap: 14px;
+  color: #d1def1;
+}
+
+.store-page .store-scroll-cue span {
+  color: #90b8ff;
+  font-size: 20px;
+  animation: store-scroll-cue 2.8s ease-in-out infinite;
+}
+
+.store-motion-toggle {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border: 1px solid rgb(180 207 244 / 0.25);
+  border-radius: 4px;
+  background: rgb(9 14 22 / 0.65);
+  color: #c9d7ec;
+  font-size: 10px;
+  letter-spacing: 0.02em;
+}
+
+.store-motion-toggle:hover {
+  border-color: #78aaff;
+  color: #fff;
+}
+
+.store-motion-icon {
+  min-width: 12px;
+  color: #90b8ff;
+}
+
+.store-page .store-benefits {
+  border-color: rgb(144 184 255 / 0.17);
+  background: linear-gradient(90deg, transparent, rgb(17 32 51 / 0.52), transparent);
+}
+
+.store-page .category-button {
+  box-shadow: 0 14px 32px rgb(0 0 0 / 0.16);
+}
+
+/* Dark, translucent surfaces let the same background reach the catalogue. */
+.store-page .catalog-section {
+  border-block: 1px solid rgb(144 184 255 / 0.13);
+  background: linear-gradient(155deg, rgb(12 21 34 / 0.79), rgb(7 13 23 / 0.68));
+  color: #eef3fb;
+}
+
+.store-page .catalog-section .section-heading h2,
+.store-page .catalog-empty h3,
+.store-page .product-card__title,
+.store-page .product-card__price {
+  color: #f2f6ff;
+}
+
+.store-page .catalog-section .section-eyebrow,
+.store-page .catalog-reset {
+  color: #90b8ff;
+}
+
+.store-page .catalog-section .section-description,
+.store-page .catalog-status,
+.store-page .catalog-sort,
+.store-page .catalog-empty p {
+  color: #b3bfd1;
+}
+
+.store-page .catalog-search,
+.store-page .catalog-sort select,
+.store-page .subcategory-chip {
+  border-color: #39485e;
+  background: #111e30;
+  color: #e3ecfa;
+}
+
+.store-page .catalog-search input {
+  color: #f2f6ff;
+}
+
+.store-page .catalog-search input::placeholder {
+  color: #a8b7ce;
+}
+
+.store-page .subcategory-chip[aria-pressed="true"] {
+  border-color: #5b93f5;
+  background: #2358b7;
+  color: #fff;
+}
+
+.store-page .product-card {
+  border-color: #344258;
+  background: #111e30;
+  color: #e3ecfa;
+  box-shadow: 0 14px 32px rgb(0 0 0 / 0.16);
+}
+
+.store-page .product-card:hover {
+  border-color: #739de0;
+  box-shadow: 0 18px 40px rgb(0 0 0 / 0.3);
+}
+
+.store-page .product-card__category {
+  color: #9ebff4;
+}
+
+.store-page .product-card__description {
+  color: #b3bfd1;
+}
+
+.store-page .brand-section {
+  background: linear-gradient(110deg, rgb(12 21 34 / 0.55), rgb(24 53 87 / 0.4));
+}
+
+.store-page .brand-section-mark {
+  border-color: rgb(144 184 255 / 0.25);
+  background: linear-gradient(145deg, rgb(49 103 172 / 0.15), rgb(9 14 22 / 0.35));
+}
+
+.store-page .delivery-card {
+  background: linear-gradient(145deg, rgb(22 38 59 / 0.88), rgb(12 22 35 / 0.78));
+}
+
+.store-page .contact-section {
+  background: linear-gradient(110deg, rgb(12 22 35 / 0.88), rgb(28 65 110 / 0.6));
+}
+
+.store-page .site-footer {
+  background: rgb(6 11 18 / 0.86);
+}
+
+@keyframes store-light-drift {
+  from { transform: translate3d(-4%, -2%, 0); }
+  to { transform: translate3d(4%, 2%, 0); }
+}
+
+@keyframes store-scroll-cue {
+  0%, 100% { transform: translateY(-3px); }
+  50% { transform: translateY(3px); }
+}
+
+@media (max-width: 1050px) and (min-width: 601px) {
+  .store-page .hero-content h1 {
+    font-size: clamp(64px, 8.8vw, 88px);
+  }
+
+  .store-page .hero-description {
+    max-width: 330px;
+  }
+}
+
+/* The portrait image shows the entire product arrangement above the copy. */
+@media (max-width: 600px) {
+  .store-page .hero-section {
+    min-height: 0;
+  }
+
+  .store-page .hero-background {
+    inset: 0 0 auto;
+    aspect-ratio: 941 / 1672;
+    mask-image: linear-gradient(#000 70%, transparent 100%);
+  }
+
+  .store-page .hero-image {
+    object-position: center top;
+  }
+
+  .store-page .hero-overlay {
+    background: linear-gradient(0deg, #090e16 0%, rgb(9 14 22 / 0.93) 25%, rgb(9 14 22 / 0.3) 49%, transparent 67%);
+  }
+
+  .store-page .hero-content {
+    padding-block: clamp(330px, 105vw, 590px) 104px;
+  }
+
+  .store-page .hero-content h1 {
+    font-size: clamp(50px, 13vw, 76px);
+  }
+
+  .store-page .hero-description {
+    max-width: 370px;
+    font-size: 13px;
+  }
+
+  .store-page .hero-actions {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 8px;
+  }
+
+  .store-page .hero-actions .button {
+    flex: 1;
+    width: auto;
+    padding-inline: 10px;
+    font-size: 9px;
+  }
+
+  .store-page .hero-bottom-label {
+    gap: 8px;
+    letter-spacing: 0.07em;
+  }
+
+  .store-page .hero-bottom-label > span:first-child {
+    display: none;
+  }
+
+  .store-scroll-cue {
+    gap: 8px;
+    font-size: 8px;
+  }
+
+  .store-motion-toggle {
+    gap: 5px;
+    padding-inline: 8px;
+    font-size: 9px;
+  }
+}
+
+.store-page[data-motion="paused"] .hero-background,
+.store-page[data-motion="paused"] .store-atmosphere-glow,
+.store-page[data-motion="paused"] .store-atmosphere-light {
+  transform: none;
+}
+
+.store-page[data-motion="paused"] .store-atmosphere-light::after,
+.store-page[data-motion="paused"] .store-scroll-cue span,
+.store-page[data-motion-suspended] .store-atmosphere-light::after,
+.store-page[data-motion-suspended] .store-scroll-cue span {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .store-page .hero-background,
+  .store-page .store-atmosphere-glow,
+  .store-page .store-atmosphere-light {
+    transform: none;
+  }
+
+  .store-page .store-atmosphere-light::after,
+  .store-page .store-scroll-cue span {
+    animation: none;
+  }
+
+  .store-page .store-motion-toggle {
+    display: none;
+  }
+}

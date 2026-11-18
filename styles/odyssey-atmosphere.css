@@ -1,0 +1,465 @@
+/* Odyssey's charcoal and antique gold scene. Screen styles leave PDF output intact. */
+@media screen {
+  .ody-body {
+    --ody-gold: #e4bf80;
+    --ody-muted: #bfb7a9;
+    --ody-border: #504536;
+    --ody-drift: 0px;
+    --ody-hero-shift: 0px;
+    --ody-silver: #bfb7a9;
+    isolation: isolate;
+    background: radial-gradient(ellipse at 80% 10%, #30271a, #100f0d 65%);
+    color: #f5f1e9;
+  }
+
+  .ody-body ::selection {
+    background: #cfa765;
+    color: #19140c;
+  }
+
+  .ody-body :is(a, button, input, select, textarea, summary):focus-visible {
+    outline-color: var(--ody-gold);
+  }
+
+  /* One fixed background connects the hero, libraries and article pages. */
+  .ody-atmosphere {
+    position: fixed;
+    z-index: -1;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    background: linear-gradient(145deg, #1b1812, #100f0d 58%, #211c13);
+  }
+
+  .ody-atmosphere::after {
+    position: absolute;
+    inset: 0;
+    content: "";
+    background: repeating-linear-gradient(0deg, transparent 0 3px, rgb(239 222 185 / 0.018) 3px 4px);
+  }
+
+  .ody-atmosphere-glow {
+    position: absolute;
+    inset: -16%;
+    background:
+      radial-gradient(ellipse at 90% 10%, rgb(193 135 54 / 0.2), transparent 48%),
+      radial-gradient(ellipse at 8% 75%, rgb(149 111 52 / 0.15), transparent 50%);
+    transform: translate3d(0, calc(var(--ody-drift) * -1), 0);
+  }
+
+  .ody-atmosphere-light {
+    position: absolute;
+    inset: -18%;
+    background: repeating-linear-gradient(122deg, transparent 0 175px, rgb(232 200 144 / 0.035) 175px 250px, transparent 250px 280px);
+    transform: translate3d(0, var(--ody-drift), 0);
+  }
+
+  .ody-atmosphere-light::after {
+    position: absolute;
+    inset: -8%;
+    content: "";
+    background: linear-gradient(122deg, transparent 25%, rgb(228 191 128 / 0.07) 46%, transparent 66%);
+  }
+
+  .ody-body[data-ody-motion="active"] .ody-atmosphere-light::after {
+    animation: ody-light-drift 24s ease-in-out infinite alternate;
+  }
+
+  .ody-body .ody-topbar {
+    background: rgb(16 15 13 / 0.95);
+    border-color: var(--ody-border);
+  }
+
+  .ody-body .eco-nav {
+    background: rgb(16 15 13 / 0.72);
+    border-color: var(--ody-border);
+  }
+
+  .ody-body .ody-nav-inner {
+    flex-wrap: wrap;
+    gap: 0 clamp(16px, 2.4vw, 34px);
+    scrollbar-color: #715d3e transparent;
+  }
+
+  .ody-body .ody-brandname {
+    border-color: var(--ody-border);
+  }
+
+  .ody-body .ody-brandname span,
+  .ody-body .ody-nav a,
+  .ody-body .ody-small,
+  .ody-body .ody-module p,
+  .ody-body .ody-page-heading p,
+  .ody-body .ody-section-heading p,
+  .ody-body .ody-feature p,
+  .ody-body .ody-two-feature p,
+  .ody-body .ody-disclosure p,
+  .ody-body .ody-academy-top p,
+  .ody-body .ody-program-card > p {
+    color: var(--ody-muted);
+  }
+
+  .ody-body .ody-nav a:hover,
+  .ody-body .ody-nav a[aria-current="page"] {
+    color: #fff4de;
+  }
+
+  .ody-body .ody-nav a[aria-current="page"]::after {
+    background: var(--ody-gold);
+  }
+
+  .ody-body .ody-kicker,
+  .ody-body .ody-card-arrow,
+  .ody-body .ody-underlink,
+  .ody-body .ody-footer a,
+  .ody-body .ody-return,
+  .ody-body .ody-feature-stats span,
+  .ody-body .ody-hero h1 span,
+  .ody-body .ody-page-heading h1 span,
+  .ody-body .ody-calculator summary,
+  .ody-body .ody-sources a {
+    color: var(--ody-gold);
+  }
+
+  .ody-body .ody-btn.primary,
+  .ody-body .ody-filterbar button.is-active,
+  .ody-body .ody-filterbar button:hover {
+    background: #cfa765;
+    border-color: #cfa765;
+    color: #19140c;
+  }
+
+  .ody-body .ody-btn.primary:hover {
+    background: #e0bc7f;
+    border-color: #e0bc7f;
+  }
+
+  .ody-body .ody-btn.secondary,
+  .ody-body .ody-btn.minimal,
+  .ody-body .ody-return,
+  .ody-body .ody-filterbar button {
+    background: rgb(22 20 16 / 0.72);
+    border-color: #786548;
+    color: #f0dfbf;
+  }
+
+  .ody-body .ody-btn.secondary:hover,
+  .ody-body .ody-btn.minimal:hover,
+  .ody-body .ody-return:hover {
+    background: #332b1e;
+    border-color: var(--ody-gold);
+  }
+
+  /* Landscape art keeps the notebook and dumbbells clear of the copy. */
+  .ody-body .ody-hero {
+    min-height: clamp(630px, calc(100svh - 132px), 820px);
+    background: #100f0d;
+    border-color: var(--ody-border);
+  }
+
+  .ody-hero-media {
+    position: absolute;
+    z-index: -2;
+    inset: -3% -1%;
+    display: block;
+    transform: translate3d(0, var(--ody-hero-shift), 0);
+  }
+
+  .ody-hero-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 66% center;
+  }
+
+  .ody-body .ody-hero::after {
+    background:
+      linear-gradient(90deg, rgb(13 12 10 / 0.7), rgb(13 12 10 / 0.36) 37%, transparent 72%),
+      linear-gradient(0deg, #100f0d, rgb(16 15 13 / 0.4) 17%, transparent 42%);
+  }
+
+  .ody-body .ody-hero-inner {
+    padding-block: 86px 112px;
+  }
+
+  .ody-body .ody-hero h1 {
+    font-size: clamp(84px, 11vw, 164px);
+    text-shadow: 0 4px 32px rgb(0 0 0 / 0.25);
+  }
+
+  .ody-body .ody-mantra {
+    max-width: 520px;
+    color: #e4c794;
+    font-size: clamp(12px, 1.3vw, 17px);
+    line-height: 1.65;
+    letter-spacing: 0.12em;
+  }
+
+  .ody-body .ody-hero-desc {
+    max-width: 460px;
+    color: #d9d1c3;
+    font-size: clamp(14px, 1.2vw, 16px);
+  }
+
+  .ody-body .ody-hero-inner .ody-small {
+    max-width: 430px;
+    font-size: 11px;
+  }
+
+  .ody-hero-bottom {
+    position: absolute;
+    right: max(6vw, 22px);
+    bottom: 20px;
+    left: max(6vw, 22px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    color: #cbbda6;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+  }
+
+  .ody-scroll-cue {
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    gap: 14px;
+    color: #e9d6b5;
+  }
+
+  .ody-scroll-cue span {
+    color: var(--ody-gold);
+    font-size: 20px;
+  }
+
+  .ody-body[data-ody-motion="active"] .ody-scroll-cue span {
+    animation: ody-scroll-cue 2.8s ease-in-out infinite;
+  }
+
+  .ody-motion-toggle {
+    display: inline-flex;
+    min-height: 44px;
+    flex-shrink: 0;
+    align-items: center;
+    gap: 8px;
+    margin-left: auto;
+    padding: 8px 12px;
+    border: 1px solid #6a593e;
+    border-radius: 5px;
+    background: #211d16;
+    color: #ead7b6;
+    font-size: 10px;
+    cursor: pointer;
+  }
+
+  .ody-motion-toggle:hover {
+    border-color: var(--ody-gold);
+    color: #fff4de;
+  }
+
+  .ody-motion-icon {
+    min-width: 12px;
+    color: var(--ody-gold);
+  }
+
+  /* Warm translucent surfaces carry the scene into the educational tools. */
+  .ody-body .ody-module,
+  .ody-body .ody-two-feature article,
+  .ody-body .ody-program-card {
+    border-color: var(--ody-border);
+    background: linear-gradient(145deg, rgb(48 40 28 / 0.88), rgb(24 22 17 / 0.86));
+    box-shadow: 0 14px 32px rgb(0 0 0 / 0.14);
+  }
+
+  .ody-body .ody-module:hover {
+    border-color: #b89358;
+    background: linear-gradient(145deg, rgb(75 56 29 / 0.9), rgb(26 23 17 / 0.9));
+  }
+
+  .ody-body .ody-module-number {
+    color: #c4a16a;
+  }
+
+  .ody-body .ody-feature,
+  .ody-body .ody-session,
+  .ody-body .ody-session :is(th, td),
+  .ody-body .ody-calculator details {
+    border-color: var(--ody-border);
+  }
+
+  .ody-body .ody-feature-stats {
+    border-color: #78613e;
+    background: radial-gradient(ellipse at center, rgb(116 81 34 / 0.4), rgb(25 22 16 / 0.82) 72%);
+  }
+
+  .ody-body .ody-page-heading {
+    border-color: var(--ody-border);
+    background: radial-gradient(ellipse at 85% 10%, rgb(179 127 46 / 0.18), transparent 56%), rgb(20 18 14 / 0.65);
+  }
+
+  .ody-body .ody-calculator,
+  .ody-body .ody-program-filters,
+  .ody-body .ody-phase,
+  .ody-body .ody-advisory {
+    border-color: var(--ody-border);
+    background: rgb(33 29 22 / 0.92);
+  }
+
+  .ody-body .ody-calc-work,
+  .ody-body .ody-field :is(input, select, textarea) {
+    border-color: #70634d;
+    background: #181610;
+  }
+
+  .ody-body .ody-field :is(input, select):focus {
+    border-color: var(--ody-gold);
+  }
+
+  .ody-body .ody-calculator p,
+  .ody-body .ody-result p,
+  .ody-body .ody-advisory,
+  .ody-body .ody-shop-note p,
+  .ody-body .ody-session td {
+    color: #d0c8ba;
+  }
+
+  .ody-body .ody-result,
+  .ody-body .ody-shop-note {
+    border-color: #967442;
+    background: linear-gradient(145deg, #3b2f1c, #221e16);
+  }
+
+  .ody-body .ody-result-value small,
+  .ody-body .ody-macro-row span {
+    color: #e4c794;
+  }
+
+  .ody-body .ody-macro-row span,
+  .ody-body .ody-tags span {
+    border-color: #70603f;
+    background: #2a241a;
+  }
+
+  .ody-body .ody-session-head,
+  .ody-body .ody-session th {
+    background: #332b1e;
+  }
+
+  .ody-body .ody-session tr:nth-child(even) {
+    background: rgb(33 29 22 / 0.8);
+  }
+
+  .ody-body .ody-footer {
+    border-color: var(--ody-border);
+    background: rgb(12 11 9 / 0.9);
+    color: var(--ody-muted);
+  }
+
+  .ody-body[data-ody-motion="paused"] :is(.ody-hero-media, .ody-atmosphere-glow, .ody-atmosphere-light) {
+    transform: none;
+  }
+
+  .ody-body[data-ody-suspended] .ody-atmosphere-light::after,
+  .ody-body[data-ody-suspended] .ody-scroll-cue span {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes ody-light-drift {
+  from { transform: translate3d(-4%, -2%, 0); }
+  to { transform: translate3d(4%, 2%, 0); }
+}
+
+@keyframes ody-scroll-cue {
+  0%, 100% { transform: translateY(-3px); }
+  50% { transform: translateY(3px); }
+}
+
+/* Portrait art keeps the journal visible above the mobile headline. */
+@media screen and (max-width: 600px) {
+  .ody-body .ody-hero {
+    min-height: 0;
+  }
+
+  .ody-hero-media {
+    inset: 0 0 auto;
+    aspect-ratio: 941 / 1672;
+    mask-image: linear-gradient(#000 72%, transparent 100%);
+  }
+
+  .ody-hero-media img {
+    object-position: center top;
+  }
+
+  .ody-body .ody-hero::after {
+    background: linear-gradient(0deg, #100f0d, rgb(16 15 13 / 0.94) 28%, rgb(16 15 13 / 0.28) 50%, transparent 68%);
+  }
+
+  .ody-body .ody-hero-inner {
+    padding: clamp(330px, 104vw, 560px) 22px 95px;
+  }
+
+  .ody-body .ody-hero h1 {
+    font-size: clamp(60px, 16vw, 96px);
+    margin-top: 16px;
+  }
+
+  .ody-body .ody-hero-inner .ody-kicker {
+    max-width: 280px;
+    font-size: 9px;
+  }
+
+  .ody-body .ody-hero-desc {
+    font-size: 13px;
+  }
+
+  .ody-body .ody-mantra {
+    font-size: 12px;
+    letter-spacing: 0.08em;
+  }
+
+  .ody-hero-bottom {
+    bottom: 16px;
+    font-size: 8px;
+    letter-spacing: 0.08em;
+  }
+
+  .ody-scroll-cue {
+    gap: 8px;
+  }
+
+  .ody-body .ody-nav-inner {
+    padding-block: 4px;
+  }
+
+  .ody-motion-toggle {
+    margin-left: 0;
+    padding-inline: 10px;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .ody-body :is(.ody-hero-media, .ody-atmosphere-glow, .ody-atmosphere-light) {
+    transform: none;
+  }
+
+  .ody-body .ody-atmosphere-light::after,
+  .ody-body .ody-scroll-cue span {
+    animation: none !important;
+  }
+
+  .ody-motion-toggle {
+    display: none;
+  }
+}
+
+@media print {
+  .ody-atmosphere,
+  .ody-hero-media,
+  .ody-hero-bottom,
+  .ody-motion-toggle {
+    display: none !important;
+  }
+}

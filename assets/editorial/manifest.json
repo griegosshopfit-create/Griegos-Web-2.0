@@ -1,0 +1,281 @@
+{
+  "brand": "GRIEGOS",
+  "date": "2026-11-14",
+  "basePath": "assets/editorial/",
+  "generated": true,
+  "notes": [
+    "Recursos editoriales conceptuales creados con IA; no prueban stock, instalaciones ni identidad de personas.",
+    "Usar JPG para web; PNG original para futuras ediciones.",
+    "Las imágenes no están conectadas a las páginas existentes; quedan listas para su uso según el alcance solicitado.",
+    "Los alt sugeridos describen contenido. Si la imagen solo decora un título que ya explica el tema, usar alt vacío."
+  ],
+  "assets": [
+    {
+      "id": "nutricion-fundamentos",
+      "title": "Alimentación con criterio",
+      "alt": "Plato de arroz, frijoles, huevo y vegetales sobre una mesa oscura.",
+      "pages": [
+        "academy/nutrition/index.html",
+        "pages/odyssey/nutricion.html",
+        "pages/odyssey/recurso.html?area=nutrition&id=fundamentos-nutricion",
+        "pages/odyssey/recurso.html?area=nutrition&id=macronutrientes"
+      ],
+      "function": "Identificar la biblioteca y las guías de fundamentos con alimentos cotidianos; evitar asociar nutrición únicamente con suplementos.",
+      "generation": {
+        "tool": "image_gen (integrado)",
+        "date": "2026-11-14",
+        "useCase": "photorealistic-natural",
+        "prompt": "Use case: photorealistic-natural. Asset type: editorial website cover for GRIEGOS ACADEMY / ODYSSEY, the free education branch of a Cuban fitness brand. Primary request: a cinematic, credible still life about everyday nutrition, coherent with a charcoal-and-antique-gold gym website. Landscape 3:2 composition. On the RIGHT TWO THIRDS of a weathered dark stone table: a modest matte charcoal ceramic plate with clearly distinct white rice, cooked black beans, one halved boiled egg, slices of tomato and cucumber; a small clear glass of water and a folded natural linen cloth. Realistic ordinary food textures and affordable everyday portions, no extravagant food styling. LEFT THIRD stays softly textured nearly black with intentional calm negative space for live HTML headings. Restrained antique-gold sunlight from an off-screen window, deep charcoal #100f0d, warm highlights #e4bf80; hints of muted olive in the food only. A subtle worn limestone architectural detail in the background nods to Greek heritage; restrained and contemporary, not a temple scene. Medium-close editorial food photography, natural lens, authentic imperfect surfaces, premium visual craft. No people, no words, no numbers, no symbols, no logos, no labels, no watermark. No supplements, no diet claims, no medical chart. This image illustrates a general educational guide, not a prescribed meal or a product for sale."
+      },
+      "files": {
+        "web": "nutricion-fundamentos.jpg",
+        "mobile": "nutricion-fundamentos-768.jpg",
+        "original": "originales/nutricion-fundamentos.png"
+      },
+      "dimensions": {
+        "web": {
+          "width": 1536,
+          "height": 1024
+        },
+        "mobile": {
+          "width": 768,
+          "height": 512
+        }
+      },
+      "objectPosition": "65% 50%",
+      "status": "preparado-en-assets-no-integrado-en-paginas"
+    },
+    {
+      "id": "calculadoras-metodo",
+      "title": "Comprende los números",
+      "alt": "Calculadora, cinta de medir y cuaderno en blanco junto a una mancuerna.",
+      "pages": [
+        "academy/calculadoras/index.html",
+        "pages/odyssey/calculadoras.html"
+      ],
+      "function": "Dar una portada reconocible a las herramientas y comunicar medición y registro sin mostrar resultados inventados.",
+      "generation": {
+        "tool": "image_gen (integrado)",
+        "date": "2026-11-14",
+        "useCase": "photorealistic-natural",
+        "prompt": "Use case: photorealistic-natural. Asset type: GRIEGOS ACADEMY / ODYSSEY editorial website cover illustrating measurement and training logs, landscape 3:2. A cinematic still life in a quiet worn gym: a precise unbranded black calculator with its display unlit, a casually coiled neutral measuring tape with no legible markings, a matte graphite mechanical pencil and an open blank cream training notebook on a dark stone bench, a softly blurred iron dumbbell in the distance. Cluster objects across right two thirds; keep left third near-black uncluttered negative space for HTML heading. Charcoal #100f0d and antique-gold light #e4bf80, warm natural side light, tactile paper, brushed metal, restrained Greek limestone texture in background. Match an established sober, disciplined fitness brand with motto strength, culture, legacy; editorial realism, not glossy tech stock. No words, no numbers, no labels, no logo, no watermark, no human body, no medical imagery, no screen UI, no charts with invented data."
+      },
+      "files": {
+        "web": "calculadoras-metodo.jpg",
+        "mobile": "calculadoras-metodo-768.jpg",
+        "original": "originales/calculadoras-metodo.png"
+      },
+      "dimensions": {
+        "web": {
+          "width": 1536,
+          "height": 1024
+        },
+        "mobile": {
+          "width": 768,
+          "height": 512
+        }
+      },
+      "objectPosition": "65% 50%",
+      "status": "preparado-en-assets-no-integrado-en-paginas"
+    },
+    {
+      "id": "entrenamiento-gimnasio",
+      "title": "Entrenamiento con estructura",
+      "alt": "Dos mancuernas junto a un banco en un gimnasio vacío iluminado con luz cálida.",
+      "pages": [
+        "academy/training/index.html",
+        "pages/odyssey/entrenamientos.html",
+        "pages/odyssey/programa.html?id=fuerza-inicial",
+        "pages/odyssey/programa.html?id=hipertrofia-intermedia"
+      ],
+      "function": "Identificar los programas de gimnasio y separar visualmente entrenamiento de nutrición; se puede compartir entre ambos programas.",
+      "generation": {
+        "tool": "image_gen (integrado)",
+        "date": "2026-11-14",
+        "useCase": "photorealistic-natural",
+        "prompt": "Use case: photorealistic-natural. Asset type: GRIEGOS ACADEMY / ODYSSEY free training program editorial cover, landscape 3:2. An empty, grounded neighborhood strength-training gym, close view of a pair of realistically constructed dark hexagonal dumbbells resting safely on a low rubber floor beside the end of a sturdy charcoal flat bench. A rack and aged concrete walls softly recede in background, a small folded neutral towel, quiet preparatory mood. Objects in right two thirds, generous uncluttered dark negative space left for live HTML title. Palette charcoal #100f0d, iron black, cream stone, restrained antique-gold window sunlight #e4bf80 matching ODYSSEY. Premium cinematic editorial photography with authentic wear, believable proportions, subtle grain and side lighting. A discreet worn limestone block adds Greek cultural continuity without fantasy architecture. No people, no exercise demonstration, no text, no numbers, no logo, no packaging, no watermark, no intimidating extreme weights."
+      },
+      "files": {
+        "web": "entrenamiento-gimnasio.jpg",
+        "mobile": "entrenamiento-gimnasio-768.jpg",
+        "original": "originales/entrenamiento-gimnasio.png"
+      },
+      "dimensions": {
+        "web": {
+          "width": 1536,
+          "height": 1024
+        },
+        "mobile": {
+          "width": 768,
+          "height": 512
+        }
+      },
+      "objectPosition": "65% 50%",
+      "status": "preparado-en-assets-no-integrado-en-paginas"
+    },
+    {
+      "id": "entrenamiento-casa",
+      "title": "Movimiento en casa",
+      "alt": "Silla de madera, banda, colchoneta y botella en un espacio doméstico.",
+      "pages": [
+        "pages/odyssey/programa.html?id=casa-tres-dias"
+      ],
+      "function": "Distinguir el programa doméstico del de gimnasio y representar su equipo mínimo.",
+      "generation": {
+        "tool": "image_gen (integrado)",
+        "date": "2026-11-14",
+        "useCase": "photorealistic-natural",
+        "prompt": "Use case: photorealistic-natural. Asset type: GRIEGOS ACADEMY / ODYSSEY home-training program cover, landscape 3:2. A quiet modest domestic room with weathered warm plaster and a clean dark stone floor, a sturdy armless wooden chair with four stable legs, a neatly coiled plain dark resistance band, a rolled graphite exercise mat lying horizontally on the floor, and a small folded towel. All objects resting safely, chair NOT used as an exercise prop by anyone. Compose chair and minimal equipment in right two thirds, leave left third dark and uncluttered for HTML heading. Calm accessible training preparation rather than aspirational luxury home. Deep charcoal #100f0d, warm taupe, antique gold #e4bf80 sunlight from an unseen window; very subtle cobalt-blue accent on a plain reusable bottle at the far right. Cinematic natural editorial photography, tangible materials, no people, no words, no numbers, no logos, no watermark, no invented products for sale, no exercise technique instruction."
+      },
+      "files": {
+        "web": "entrenamiento-casa.jpg",
+        "mobile": "entrenamiento-casa-768.jpg",
+        "original": "originales/entrenamiento-casa.png"
+      },
+      "dimensions": {
+        "web": {
+          "width": 1536,
+          "height": 1024
+        },
+        "mobile": {
+          "width": 768,
+          "height": 512
+        }
+      },
+      "objectPosition": "65% 50%",
+      "status": "preparado-en-assets-no-integrado-en-paginas"
+    },
+    {
+      "id": "nutricion-organizacion",
+      "title": "Organiza tu semana",
+      "alt": "Recipientes con arroz, frijoles y vegetales junto a huevos, plátano y un cuaderno.",
+      "pages": [
+        "pages/odyssey/recurso.html?area=nutrition&id=organizacion-semanal"
+      ],
+      "function": "Representar planificación, compras y preparación cotidiana en la guía de organización semanal.",
+      "generation": {
+        "tool": "image_gen (integrado)",
+        "date": "2026-11-14",
+        "useCase": "photorealistic-natural",
+        "prompt": "Use case: photorealistic-natural. Asset type: editorial guide cover for GRIEGOS ACADEMY / ODYSSEY, landscape 3:2. Thoughtful everyday meal organization on a dark stone kitchen worktop: two modest reusable clear food containers, one with cooked rice and black beans clearly separated, one with tomato and cucumber pieces; nearby two whole eggs in a small charcoal ceramic bowl, a green plantain and an open plain cream notebook with entirely blank pages, graphite pencil. Food is ordinary and realistic, not a clinical meal plan and no rigid measured portions. Composition right-weighted, left third uncluttered charcoal negative space for live website heading. Palette charcoal #100f0d, warm cream paper, muted natural food colors, restrained antique-gold window light #e4bf80; subtle worn plaster and limestone texture suggesting the brand's Greek heritage. Cinematic editorial photography, natural imperfections, warm structured mood. No people, no words, no numbers, no brands, no logo, no watermark, no charts, no supplements, no exotic luxury ingredients."
+      },
+      "files": {
+        "web": "nutricion-organizacion.jpg",
+        "mobile": "nutricion-organizacion-768.jpg",
+        "original": "originales/nutricion-organizacion.png"
+      },
+      "dimensions": {
+        "web": {
+          "width": 1536,
+          "height": 1024
+        },
+        "mobile": {
+          "width": 768,
+          "height": 512
+        }
+      },
+      "objectPosition": "65% 50%",
+      "status": "preparado-en-assets-no-integrado-en-paginas"
+    },
+    {
+      "id": "progresion-control",
+      "title": "Progresión con control",
+      "alt": "Cuaderno de entrenamiento en blanco con lápiz, discos pequeños y mancuernas.",
+      "pages": [
+        "academy/recursos/index.html",
+        "academy/planes/index.html",
+        "pages/odyssey/academy.html",
+        "pages/odyssey/recurso.html?area=academy&id=progresion-con-control"
+      ],
+      "function": "Hacer reconocible el artículo de sobrecarga progresiva mediante registro e incrementos pequeños.",
+      "generation": {
+        "tool": "image_gen (integrado)",
+        "date": "2026-11-14",
+        "useCase": "photorealistic-natural",
+        "prompt": "Use case: photorealistic-natural. Asset type: GRIEGOS ACADEMY / ODYSSEY editorial article cover about training progression with control, landscape 3:2. A quiet close-up still life on a charcoal padded gym bench: open blank cream training notebook, a matte graphite pencil placed diagonally, two small iron change plates resting flat and safely stacked, pair of believable dark dumbbells softly receding in background. Compose tactile paper and small incremental plates in right two thirds, leave left third calm near-black negative space for live HTML text. Charcoal #100f0d, antique-gold #e4bf80 light, worn iron, cream paper, slight muted blue reflection as connection to parent GRIEGOS brand. Directional natural light in an ordinary clean gym, premium cinematic documentary still life, realistic proportions. No writing on paper, no labels, no numbers on plates, no charts, no growth arrows, no logos, no watermark, no person, no promises of transformation, no excessive weights."
+      },
+      "files": {
+        "web": "progresion-control.jpg",
+        "mobile": "progresion-control-768.jpg",
+        "original": "originales/progresion-control.png"
+      },
+      "dimensions": {
+        "web": {
+          "width": 1536,
+          "height": 1024
+        },
+        "mobile": {
+          "width": 768,
+          "height": 512
+        }
+      },
+      "objectPosition": "65% 50%",
+      "status": "preparado-en-assets-no-integrado-en-paginas"
+    },
+    {
+      "id": "suplementacion-criterio",
+      "title": "Suplementación con criterio",
+      "alt": "Envase conceptual sin marca junto a una lupa, un cuaderno y un vaso de agua.",
+      "pages": [
+        "pages/odyssey/recurso.html?area=academy&id=suplementacion-responsable"
+      ],
+      "function": "Comunicar revisión crítica de la información de un suplemento. Solo uso editorial: el envase no representa un producto a la venta.",
+      "generation": {
+        "tool": "image_gen (integrado)",
+        "date": "2026-11-14",
+        "useCase": "photorealistic-natural",
+        "prompt": "Use case: photorealistic-natural. Asset type: GRIEGOS ACADEMY / ODYSSEY educational article cover about evaluating optional supplements, landscape 3:2. Calm editorial still life on a worn dark limestone counter: one small unbranded matte graphite sealed supplement container with an entirely blank cream paper label, a simple dark magnifying glass resting on the table beside it, an open blank notebook and graphite pencil; blurred simple glass of water behind. Container and magnifying glass in right two thirds, left third deep charcoal negative space for HTML heading. Restrained antique gold #e4bf80 warm side light, charcoal #100f0d, warm white paper, realistic modest proportions, tactile natural materials, subtle Greek limestone heritage. Thoughtful critical-review mood, no marketing spectacle. No pills scattered, no powder spill, no scoop dosage, no claims, no certification badges, no people, no brand names, no legible writing, no numbers, no logo, no watermark. This is a conceptual educational visual and must not imitate a real sale product or label."
+      },
+      "files": {
+        "web": "suplementacion-criterio.jpg",
+        "mobile": "suplementacion-criterio-768.jpg",
+        "original": "originales/suplementacion-criterio.png"
+      },
+      "dimensions": {
+        "web": {
+          "width": 1536,
+          "height": 1024
+        },
+        "mobile": {
+          "width": 768,
+          "height": 512
+        }
+      },
+      "objectPosition": "65% 50%",
+      "status": "preparado-en-assets-no-integrado-en-paginas"
+    },
+    {
+      "id": "identidad-legado",
+      "title": "Fuerza. Cultura. Legado.",
+      "alt": "Mancuerna y cuaderno frente a un fragmento de piedra con greca, iluminados en azul y dorado.",
+      "pages": [
+        "nosotros/index.html",
+        "index.html#esencia"
+      ],
+      "function": "Explicar visualmente los tres ejes de GRIEGOS y conectar Store azul con Academy dorada sin alterar el logotipo.",
+      "generation": {
+        "tool": "image_gen (integrado)",
+        "date": "2026-11-14",
+        "useCase": "stylized-concept",
+        "prompt": "Use case: stylized-concept. Asset type: premium cinematic brand editorial background for GRIEGOS, a Cuban fitness store and free academy with motto 'Fuerza. Cultura. Legado.' Generate a landscape 3:2 photographic still life, NO rendered words. Contemporary strength meets Greek cultural inheritance in a grounded studio scene: on the right two thirds, a single weathered carved limestone fragment with a simple Greek-key relief pattern behind a realistically built black iron dumbbell and an open blank cream notebook. The three objects convey culture, strength and learning with restraint. Raking cobalt-blue #2864D9 light from left edge and subtle antique-gold #e4bf80 warm rim light from right, dark charcoal #090b0f background, brushed black metal and natural aged stone, tactile editorial realism, sophisticated deep shadows, no theatrical smoke. Left third almost black and uncluttered for live HTML title. No human figures, no gods, no helmets, no temples, no laurels, no fake premises, no words, no letters, no numerals, no logo, no watermark. Do not redesign or imitate the existing GRIEGOS logo."
+      },
+      "files": {
+        "web": "identidad-legado.jpg",
+        "mobile": "identidad-legado-768.jpg",
+        "original": "originales/identidad-legado.png"
+      },
+      "dimensions": {
+        "web": {
+          "width": 1536,
+          "height": 1024
+        },
+        "mobile": {
+          "width": 768,
+          "height": 512
+        }
+      },
+      "objectPosition": "65% 50%",
+      "status": "preparado-en-assets-no-integrado-en-paginas"
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+[
+  {
+    "file": "nutricion-fundamentos.jpg",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 206739,
+    "sha256": "02efe2f74425816450ab6654f6e584f1b4cf5edc09462aab231ba8f77f1c9601"
+  },
+  {
+    "file": "nutricion-fundamentos-768.jpg",
+    "width": 768,
+    "height": 512,
+    "bytes": 56660,
+    "sha256": "b2b2c4708fe153299d908342d5e6ee64fa111f740f3c8c196666d26c70c89007"
+  },
+  {
+    "file": "originales/nutricion-fundamentos.png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 2272286,
+    "sha256": "27744b0086bd3f05ee7bdf6b73455db0f9fb54442383698ad173b646692f1255"
+  },
+  {
+    "file": "calculadoras-metodo.jpg",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 182517,
+    "sha256": "0ad0f233c1b88d4800cfdad6c43a91cac65524f5b93859ef4ecc4708bbaf7291"
+  },
+  {
+    "file": "calculadoras-metodo-768.jpg",
+    "width": 768,
+    "height": 512,
+    "bytes": 46321,
+    "sha256": "a86e9ff8b06ef61c327d2addc7e8d0b3e02c9e50e98d84ba0f11d39a3228f709"
+  },
+  {
+    "file": "originales/calculadoras-metodo.png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 2217542,
+    "sha256": "99ab1373f21a2b964683db0fbfecedc6871b2e36205d69d3c796b22c22cca80e"
+  },
+  {
+    "file": "entrenamiento-gimnasio.jpg",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 183206,
+    "sha256": "6eaf8b64d71b223f0a688905d57a55ca303aa94b8f2beb73a3ebc387ba07eec9"
+  },
+  {
+    "file": "entrenamiento-gimnasio-768.jpg",
+    "width": 768,
+    "height": 512,
+    "bytes": 46486,
+    "sha256": "6a0b878571e8c424287360fdb922a1c5b9f40070c51c087c9546b19c80ef84d0"
+  },
+  {
+    "file": "originales/entrenamiento-gimnasio.png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 2151939,
+    "sha256": "efb88f1c9778b177432b6ce49b8d10adad7701f20c5ebca1322e7543f890fd77"
+  },
+  {
+    "file": "entrenamiento-casa.jpg",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 196209,
+    "sha256": "5698355204e05f02786a783513575daee433f5bd0a14d548bfca17c9a19493cc"
+  },
+  {
+    "file": "entrenamiento-casa-768.jpg",
+    "width": 768,
+    "height": 512,
+    "bytes": 45698,
+    "sha256": "8ff8c4ab96a0706ade2e491d34af540506549bac9255104c7e1086f3467640d0"
+  },
+  {
+    "file": "originales/entrenamiento-casa.png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 2326154,
+    "sha256": "5e12166a94273964eaa21cd6626738c6df50cef29d517e40fa589bcf6181f64d"
+  },
+  {
+    "file": "nutricion-organizacion.jpg",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 264821,
+    "sha256": "3d98b6d7a8a4ce648d57d40691b0463414dffc9c28c44cb92961a733abcb4748"
+  },
+  {
+    "file": "nutricion-organizacion-768.jpg",
+    "width": 768,
+    "height": 512,
+    "bytes": 61602,
+    "sha256": "97f86da0a4c9c2812fef13dea9529244c0858ba67cf9004947b29d832d2e75d1"
+  },
+  {
+    "file": "originales/nutricion-organizacion.png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 2670115,
+    "sha256": "7a5f3e2dccbbe238dbb0560106157d27e84a8f44dd03990690ffc781f57bbfff"
+  },
+  {
+    "file": "progresion-control.jpg",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 160874,
+    "sha256": "f51ab6e611c563cb651c11e5f850ceaa695c75e10e31f82999eb37ec5f6b2e00"
+  },
+  {
+    "file": "progresion-control-768.jpg",
+    "width": 768,
+    "height": 512,
+    "bytes": 38303,
+    "sha256": "853d4c93778328375240ca85c6ebb1648aec99b15ddc514789a5f817f388ea04"
+  },
+  {
+    "file": "originales/progresion-control.png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 2111308,
+    "sha256": "2048927b4cd328736be202437b079a38c26d659a0fe6a473fc9467df783c3735"
+  },
+  {
+    "file": "suplementacion-criterio.jpg",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 193058,
+    "sha256": "8fc536611b645e48b31ef052e015e208dc6c38f70f005e35cd92208fdce9730e"
+  },
+  {
+    "file": "suplementacion-criterio-768.jpg",
+    "width": 768,
+    "height": 512,
+    "bytes": 53291,
+    "sha256": "cfddf71e6550b678c18dc9508d76a52b4ccfdd00241003d74b074759e7c14136"
+  },
+  {
+    "file": "originales/suplementacion-criterio.png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 2212365,
+    "sha256": "44ad3377b09c0e2585faf5a53aeffb9c987849c33e6393efbb8ac4d6d7235f41"
+  },
+  {
+    "file": "identidad-legado.jpg",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 230999,
+    "sha256": "1da71ce18259b524c35572d7d6b9c090411d2abd30a33ece056c4ff94a3ed23a"
+  },
+  {
+    "file": "identidad-legado-768.jpg",
+    "width": 768,
+    "height": 512,
+    "bytes": 54782,
+    "sha256": "807936b5ebc57976155b6707d0ea45c1a5c5a072b8a023bf635055275d6468d6"
+  },
+  {
+    "file": "originales/identidad-legado.png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 2425086,
+    "sha256": "7d0f7ce3f2d25a7b30554c82f2cb1cf2b07836272b329b31190c21ddd4931506"
+  }
+]
